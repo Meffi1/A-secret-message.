@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🔐 Что здесь?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a1a;
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #2a2a4a;
+            border-radius: 28px;
+            padding: 40px 30px;
+            max-width: 650px;
+            width: 100%;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        h1 {
+            color: #ffb3c6;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 0 0 30px rgba(255, 100, 150, 0.15);
+        }
+
+        .cipher-box {
+            background: #0f0f20;
+            border: 1px solid #1f1f3a;
+            border-radius: 16px;
+            padding: 25px 20px;
+            margin-bottom: 25px;
+        }
+
+        .cipher-text {
+            color: #b8b8e0;
+            font-size: 14px;
+            line-height: 2.2;
+            word-break: break-all;
+            letter-spacing: 0.5px;
+        }
+
+        .cipher-text span {
+            display: inline-block;
+            background: #181830;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin: 2px 1px;
+            font-size: 13px;
+        }
+
+        .hint-area {
+            border-top: 1px dashed #2a2a4a;
+            padding-top: 20px;
+            margin-top: 10px;
+        }
+
+        .hint-label {
+            color: #666699;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hint-value {
+            color: #88ddff;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 8px;
+            display: block;
+            background: rgba(136, 221, 255, 0.05);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(136, 221, 255, 0.1);
+            letter-spacing: 3px;
+        }
+
+        .hint-value small {
+            font-size: 14px;
+            font-weight: normal;
+            color: #88aacc;
+        }
+
+        .footer {
+            margin-top: 25px;
+            color: #333355;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .footer span {
+            color: #555577;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 15px;
+            }
+            .cipher-text {
+                font-size: 11px;
+                line-height: 2.4;
+            }
+            .cipher-text span {
+                font-size: 11px;
+                padding: 3px 7px;
+            }
+            .hint-value {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="icon">🕵️‍♀️</span>
+        <h1>Расшифруй это послание</h1>
+
+        <div class="cipher-box">
+            <div class="cipher-text">
+                <span>0KLRiyDQvtGH0LXQvdGMINCy0LDQttC90LAg0LTQu9GPINC80LXQvdGPLiDQmCDRjyDRhdC+0YfRgyDRh9GC0L7QsdGLINGC0Ysg0Y3RgtC+INC30L3QsNC70LAuINCS0YDQtdC80Y8gMDA6MDAuIFdlYmJwbGF0cy4=</span>
+            </div>
+        </div>
+
+        <div class="hint-area">
+            <div class="hint-label">💡 Подсказка</div>
+            <div class="hint-value">
+                Base64
+                <small>— попробуй декодировать</small>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>✦ Расшифруй → узнаешь ✦</span>
+        </div>
+    </div>
+
+</body>
+</html>
